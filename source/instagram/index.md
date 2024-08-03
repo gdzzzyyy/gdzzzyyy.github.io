@@ -2,11 +2,10 @@
 layout: post
 title: instagram
 date: 2024-08-03 13:25:30
-title: "相册"
 noDate: "true"
 ---
 <div class="instagram" data-client-id="956dd096b6e5496aba6662165b9b8443" data-user-id="438522285">
-    <a href="https://www.instagram.com/" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a>
+    <a href="https://www.instagram.com/yao_santu1993/" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a>
 </div>
 <script src="/js/jquery.lazyload.js"></script>
 <script src="/js/instagram.js"></script>
