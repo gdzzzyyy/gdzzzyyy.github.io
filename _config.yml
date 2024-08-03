@@ -4,16 +4,17 @@
 
 # Site
 title: 晓璇&三土
-subtitle: ''
+subtitle: 和亲爱的在一起
 description: '这是我们相亲相爱的小窝'
-keywords:
+keywords: 日本,程序员，エンジニア，爬山，旅游，美食
 author: 三土
 language: en
 timezone: Japan
+email: coderyao1993@yahoo.co.jp
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://santu.github.io
+url: https://gdzzzyyy.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,7 +41,12 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+#文章资源文件夹  提供图片等
+post_asset_folder: true
+#使用Markdown嵌入图片
+marked: 
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -96,13 +102,37 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+##theme: landscape
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   #repo: git@github.com:gdzzzyyy/santu.github.io.git
-  repo: https://github.com/gdzzzyyy/santu.github.io.git
+  repo: https://github.com/gdzzzyyy/gdzzzyyy.github.io.git
   branch: master
 
+feed:
+    type: atom
+    path: atom.xml
+    limit: 100
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
