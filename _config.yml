@@ -110,7 +110,7 @@ theme: yilia
 deploy:
   type: git
   #repo: git@github.com:gdzzzyyy/santu.github.io.git
-  repo: https://github.com/gdzzzyyy/gdzzzyyy.github.io.git
+  repo: https://github.com/gdzzzyyy/gdzzzyyy.github.io
   branch: master
 
 feed:
