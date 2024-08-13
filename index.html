@@ -141,6 +141,285 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Linux/01/Linux02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/13/Linux/01/Linux02/">Linux02</a>
+    </h1>
+  
+
+        
+        <a href="/2024/08/13/Linux/01/Linux02/" class="archive-article-date">
+  	<time datetime="2024-08-13T02:25:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <!-- 
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Torvalds-%E7%9A%84-Linux-%E5%BC%80%E5%8F%91"><span class="toc-text">Torvalds 的 Linux 开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Minix"><span class="toc-text">Minix</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9-386-%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%A4%9A%E4%BB%BB%E5%8A%A1%E6%B5%8B%E8%AF%95"><span class="toc-text">对 386 硬件的多任务测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E6%AC%A1%E9%87%8A%E5%87%BA-Linux-0-02"><span class="toc-text">初次释出 Linux 0.02</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E7%9A%84%E5%BC%80%E5%8F%91%EF%BC%9A%E8%99%9A%E6%8B%9F%E5%9B%A2%E9%98%9F%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="toc-text">Linux 的开发：虚拟团队的产生</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E7%9A%84%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC"><span class="toc-text">Linux 的内核版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-distribution"><span class="toc-text">Linux distribution</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E5%AE%8C%E5%85%A8%E5%AE%89%E8%A3%85%E7%9A%84-Linux-%E5%8F%91%E5%B8%83%E5%A5%97%E4%BB%B6"><span class="toc-text">可完全安装的 Linux 发布套件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%84%E5%A4%A7-Linux-Distribution-%E7%9A%84%E4%B8%BB%E8%A6%81%E5%BC%82%E5%90%8C%EF%BC%9A%E6%94%AF%E6%8C%81%E6%A0%87%E5%87%86"><span class="toc-text">各大 Linux Distribution 的主要异同：支持标准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E4%B8%9A%E7%89%88%E6%9C%AC%E8%BF%98%E6%98%AF%E5%9B%A2%E9%98%9F%E7%89%88%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">商业版本还是团队版的区别？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux-%E5%9C%A8%E4%B8%AD%E5%9B%BD"><span class="toc-text">Linux 在中国</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E4%BD%A0%E7%9A%84-Linux-distribution"><span class="toc-text">选择合适你的 Linux distribution</span></a></li></ol></li></ol></li></ol>
+    </div>
+ --> -->
+        <h1 id="Torvalds-的-Linux-开发"><a href="#Torvalds-的-Linux-开发" class="headerlink" title="Torvalds 的 Linux 开发"></a>Torvalds 的 Linux 开发</h1><p>linux 是芬兰人 Torvalds 开发的，那么他为什么可以开发 linx ？这有什么故事呢?</p>
+<h2 id="Minix"><a href="#Minix" class="headerlink" title="Minix"></a>Minix</h2><p>Torvalds 在大学期间，学习汇编语言， Unix 不支持个人计算机，而且只提供 16 个终端机，<br>满足不了它使用计算机的需求，于是就在 intel 386 个人计算机上安装了类似 unix 的 minix 系统，<br>而且附带源码，并且学习了这个源码，学到了很多内核程序设计的概念</p>
+<h2 id="对-386-硬件的多任务测试"><a href="#对-386-硬件的多任务测试" class="headerlink" title="对 386 硬件的多任务测试"></a>对 386 硬件的多任务测试</h2><p>什么是多任务？</p>
+<p>CPU 在一个时间内仅能处理一个程序，那么同时启动两个程序的话，怎么办？<br>如果这个 CPU 有多任务能力的话，则可以在不同程序间切换。</p>
+<p>CPU 频率假设为 1GHz 的话，哪表示 CPU 一秒钟可以进行 10 的 9 次方工作，假设每个程序对 CPU 只有 1000 次运行周期，<br>然后就得切换到下个程序的话，那么 CPU 一秒钟就能够切换 10 的 6 次方次。在这么快的处理速度下，<br>你会发现，两个程序感觉上几乎是同步在执行的</p>
+<p>早期的 intel x86 对多任务支持不佳，intel 386 出来以后改善了很多，torvalds 就买了一台，<br>然后在这个机器上面测试性能，写了如下三个程序</p>
+<ul>
+<li>持续输出 A 程序</li>
+<li>持续输出 B 程序</li>
+<li>一个程序将上面两个程序进行切换</li>
+</ul>
+<p>结果屏幕上面就看到了 ABAB.. 的输出结果，多任务处理测试成功了</p>
+<p>要有多任务处理能力，需要以下两点：</p>
+<ol>
+<li>CPU 支持多任务</li>
+<li>操作系统需要支持多任务</li>
+</ol>
+<p>有个例子很适合来解释多任务大体是什么样子的。开记者招待会，主持人问：谁要发问？下面一大群人举手，<br>那么主持人会挑选一位进行回答，然后再问：谁要发问？下面又一群人举手，刚刚被回答过的记者也可以举手。<br>这就是多任务特性，同一时间只能处理一个问题</p>
+<h2 id="初次释出-Linux-0-02"><a href="#初次释出-Linux-0-02" class="headerlink" title="初次释出 Linux 0.02"></a>初次释出 Linux 0.02</h2><p>minix 系统可以在 386 上安装，虽然真的很棒，但是谭宁邦教授不愿意对功能进行加强，<br>让 torvalds 产生了自己写一个操作系统的想法。</p>
+<p>在 GUN 的 bash 工作环境和 gcc 编译程序等自由软件外加参考 minix 的设计理念与程序代码，<br>最终写出了一个内核程序，而且可以在 386 上面运行。随后放在了 ftp 网站上，供更多的人使用，<br>因为他想更多的人提供建议与一起来开发这个内核。</p>
+<p>当时放在 ftp 的 linux 目录下的，第一个内核版本是 0.02，所以大家就称呼这个内核为 linux 了。</p>
+<p>为了能够让 linux 能兼容 unix 的软件，对 linux 进行了修改，开始参考 POSIX</p>
+<p>::: tip<br>POSIX 是可携式操作系统接口（Portable Operating System Interface）的缩写，<br>重点在于规范内核与应用程序之间的接口，这是由美国电气与电子工程师学会（IEEE）所发布的一项标准<br>:::</p>
+<p>POSIX 标准主要是针对 UNIX 与一些软件运行时的标准规范，所以按照这个规范来支持，<br>就能让 unix 上的软件在 linux 上运行，所以导致 linux 使用率大增</p>
+<h2 id="Linux-的开发：虚拟团队的产生"><a href="#Linux-的开发：虚拟团队的产生" class="headerlink" title="Linux 的开发：虚拟团队的产生"></a>Linux 的开发：虚拟团队的产生</h2><p>一个人的力量是有限的，所以有了广大自愿者的加入。</p>
+<p>托瓦兹不可能有所有的硬件，也没有那么多的精力对所有硬件进行驱动程序的开发，所以志愿者有这个硬件，<br>并且愿意开发，开发完成之后就放到内核中测试。</p>
+<p>随着越来越多的需求，随时都有代码加入的状况，于是 linux 便逐渐开发成具有模块的功能，即是将某个功能独立在内核外，<br>在需要的时候才加载到内存中，如此一来有新的硬件驱动程序或其他协议的程序代码进来时，就可以模块化，<br>不再需要每次都编译内核了。就如同 Windows 中的驱动程序一样。</p>
+<p>测试代码整合到内核，都是一项耗时的工作，有自愿者的加入，让 linux 发展得更快，他们被称为虚拟团队。</p>
+<p>在 1994 年，linux 内核发布了 1.0.0 版本，并加入了 x window system 的支持。1996 年发布了 linux 2.0</p>
+<h2 id="Linux-的内核版本"><a href="#Linux-的内核版本" class="headerlink" title="Linux 的内核版本"></a>Linux 的内核版本</h2><p>Linux 的内核版本编号类似如下样子</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2.6.18-92.e15</span><br><span class="line">主版本.次版本.释出版本-修改版本</span><br></pre></td></tr></table></figure>
+
+<p>linux 开发者太多，导致内核经常变动，但是一般家庭或企业应用的话，常变动版本号并不合适，<br>所以讲内核分为两个内核编号</p>
+<ul>
+<li><p>主、次版本为奇数：开发中版本（development）</p>
+<p>如 2.5.xx 就是一个开发中版本，等待测试没有问题之后才会加入到下一版的稳定内核中</p>
+</li>
+<li><p>主、次版本为偶数：稳定版本（stable）</p>
+</li>
+</ul>
+<p>那么释出版本与修改版又是什么呢?</p>
+<ul>
+<li><p>释出版本</p>
+<p>在主次版本架构不变的情况下，新站的功能累积到一定的程度后，新释放出的内核版本</p>
+</li>
+<li><p>修改版本</p>
+<p>由于 linux 使用的是 GPL 授权，因此大家都可以修改，如果你再某个版本的内核修改过部分代码，<br>就可以加上修改版本号了</p>
+</li>
+</ul>
+<p>distribution 版本又是什么呢（下个小节讲解）？</p>
+<p>这里强调的是 linux 内核版本与 distribution 不是一个东西，因为 linux 版本指的是内核版本，<br>而 centOs 7 是 distribution 版本，并不是指 linux 的内核版本。他们都是在 linux 内核基础上，<br>增加了自家的开发工具和软件发行的。</p>
+<h2 id="Linux-distribution"><a href="#Linux-distribution" class="headerlink" title="Linux distribution"></a>Linux distribution</h2><p>Linux 其实就是一个操作系统最底层的内核及其提供的内核工具，它是 GPL 授权模式，<br>所以任何人都可以运行和修改。另外 Linux 参考 POSIX 设计规范，因此兼容 UNIX 操作系统ß</p>
+<h3 id="可完全安装的-Linux-发布套件"><a href="#可完全安装的-Linux-发布套件" class="headerlink" title="可完全安装的 Linux 发布套件"></a>可完全安装的 Linux 发布套件</h3><p>GNU 项目很厉害，但是缺乏内核程序，所以只能在其他的 unix 上运行，linux 的出现，与大量的自愿者和使用者，<br>造就了大批量的软件应用。</p>
+<p>一部分商业公司或非营利性团体将这些资源整合在一起，加上自己的创意工具程序，这个工具程序可以让用户以光盘或网络等形式直接<br>安装&#x2F;管理 Linux 系统。这个 「kernel + Softwares + Tools」的可完全安装的系统，我们称之为 <strong>Linux distribution</strong></p>
+<p>由于 GUN 的 GPL 授权并非不能从事商业行为，所以有写公司就专门销售 linux distribution，<br>鉴于 GPL 授权，一般也可以在网络上下载到，但是你需要这些公司为你提供服务，那么久需要向这些公司付费</p>
+<h3 id="各大-Linux-Distribution-的主要异同：支持标准"><a href="#各大-Linux-Distribution-的主要异同：支持标准" class="headerlink" title="各大 Linux Distribution 的主要异同：支持标准"></a>各大 Linux Distribution 的主要异同：支持标准</h3><p>开发 linux distribution 的公司太多了，在中国有名的 Red Hat、SUSE、Ubuntu、Fedora、Debian 等，<br>但是他们都使用 linux 内核，他们包装的软件重复性很高（常用的软件）</p>
+<p>此外为了不让 linux distribution 开发不至于差异太大，他们还遵守 Linux Standard Base（LSB）<br>等标准规范来规范开发，以及使用目录架构 File system Hierarchy Standard（FHS）标准规范。</p>
+<p>他们唯一的差别可能就是各自所开发出来的管理工具以及套件管理模式，所以说，基本上每个 linux distribution 除了架构的严谨度<br>与选择的套件内容外，其实差异并不太大</p>
+<p>::: tip<br>鸟哥认为 distribution 主要分为两大系统：</p>
+<ul>
+<li>使用 rpm 方式安装软件的系统：red Hat、fedora、Suse 等</li>
+<li>使用 dpkg 方式：debian、Ubuntu、B2D 等<br>:::</li>
+</ul>
+<h3 id="商业版本还是团队版的区别？"><a href="#商业版本还是团队版的区别？" class="headerlink" title="商业版本还是团队版的区别？"></a>商业版本还是团队版的区别？</h3><p>在选择 distribution 的时候，选择商业版本还是团队版呢?他们的区别可能就是稳定性了</p>
+<ul>
+<li><p>商业版</p>
+<p>一般用在服务器上，包括 red hat、SuSe 等版本，有新功能并不会立即更新，需要一段时间的打磨之后才会更新</p>
+</li>
+<li><p>团队版</p>
+<p>一般用在个人计算机上，包括 fedora、ubuntu、OpenSuSe 等，更新较快，可能有 BUG</p>
+</li>
+</ul>
+<h3 id="Linux-在中国"><a href="#Linux-在中国" class="headerlink" title="Linux 在中国"></a>Linux 在中国</h3><p>发行套件大多数以英文语系国家为主，所以中国的 linux 爱好者就做了很多汉化方面的工作，比如台湾地区发起的 CLE 项目，<br>就开发了很多的中文套件及翻译了很多的英文文件。（我自己在写笔记的时候，书上的连接没有打开过，这里就不贴出来连接了）</p>
+<h3 id="选择合适你的-Linux-distribution"><a href="#选择合适你的-Linux-distribution" class="headerlink" title="选择合适你的 Linux distribution"></a>选择合适你的 Linux distribution</h3><p>上面所述主差异性并不大，鸟哥建议是先学习以 RPM 套件管理为主的 RHEL&#x2F;Fedora&#x2F;SuSE&#x2F;centOs<br>等中国用户较多的版本</p>
+<p>总之版本很多，但是差异并不是很大，选定一个版本从头彻尾的了解后，再去学习其他版本就很容易了，<br>如果提供一些按计算机用途来分类的建议：</p>
+<ul>
+<li><p>企业环境：选择商业版本，如 RedHat 的 RHEL 或则是 Novel 的 SuSE。因为会提供客服服务，降低企业风险</p>
+</li>
+<li><p>个人或教学服务器环境：建议使用号称完全兼容商业版本 RHEL 的 CentOS</p>
+<p>因为 CentOS 是抓 RHEL 的源码重新都起来一个 linux distribution，这一版本的软件与 RHEL 完全一样，<br>改版幅度较小，适合用于服务器系统的场景</p>
+</li>
+<li><p>个人桌面计算机</p>
+<p>想要尝鲜的话可以使用 Fedora、Ubuntu 等 Desktop（桌面环境）使用版本</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/08/13/Linux/01/Linux02/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Linux/01/Linux01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/13/Linux/01/Linux01/">Linux01</a>
+    </h1>
+  
+
+        
+        <a href="/2024/08/13/Linux/01/Linux01/" class="archive-article-date">
+  	<time datetime="2024-08-13T02:24:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <!-- 
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">Linux 是什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B9%8B%E5%89%8D-UNIX-%E7%9A%84%E5%8E%86%E5%8F%B2"><span class="toc-text">Linux 之前 UNIX 的历史</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1969-%E5%B9%B4%E4%BB%A5%E5%89%8D%EF%BC%9A%E5%88%86%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%88Compatible-Time-Sharing-System%EF%BC%8CCTSS%EF%BC%89"><span class="toc-text">1969 年以前：分时操作系统（Compatible Time-Sharing System，CTSS）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1969-%E5%B9%B4%EF%BC%9AUNIX-%E5%8E%9F%E5%9E%8B"><span class="toc-text">1969 年：UNIX 原型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1973-%E5%B9%B4%EF%BC%9AUNIX"><span class="toc-text">1973 年：UNIX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1979-%E5%B9%B4%EF%BC%9ASystem-V-%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E"><span class="toc-text">1979 年：System V 架构与版权声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1984-%E5%B9%B4%EF%BC%9AGNU-%E9%A1%B9%E7%9B%AE%E4%B8%8E-FSF%E5%9F%BA%E9%87%91%E4%BC%9A%E6%88%90%E7%AB%8B"><span class="toc-text">1984 年：GNU 项目与 FSF基金会成立</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GUN-%E7%9A%84%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81"><span class="toc-text">GUN 的通用公共许可证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1988-%E5%B9%B4-%E5%9B%BE%E5%BD%A2%E6%8E%A5%E5%8F%A3-XFree86-%E9%A1%B9%E7%9B%AE"><span class="toc-text">1988 年 图形接口 XFree86 项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1991-%E5%B9%B4%EF%BC%9ALinux-%E5%87%BA%E4%B8%96"><span class="toc-text">1991 年：Linux 出世</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-GNU-%E9%A1%B9%E7%9B%AE"><span class="toc-text">关于 GNU 项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%B4%BB%E5%8A%A8"><span class="toc-text">自由软件的活动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E7%9A%84%E7%89%88%E6%9D%83-GNU-GPL"><span class="toc-text">自由软件的版权 GNU GPL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E7%94%B1%EF%BC%88Free%EF%BC%89%E7%9A%84%E7%9C%9F%E8%B0%9B"><span class="toc-text">自由（Free）的真谛</span></a></li></ol></li></ol></li></ol>
+    </div>
+ --> -->
+        <h1 id="Linux-是什么？"><a href="#Linux-是什么？" class="headerlink" title="Linux 是什么？"></a>Linux 是什么？</h1><h2 id="Linux-之前-UNIX-的历史"><a href="#Linux-之前-UNIX-的历史" class="headerlink" title="Linux 之前 UNIX 的历史"></a>Linux 之前 UNIX 的历史</h2><h3 id="1969-年以前：分时操作系统（Compatible-Time-Sharing-System，CTSS）"><a href="#1969-年以前：分时操作系统（Compatible-Time-Sharing-System，CTSS）" class="headerlink" title="1969 年以前：分时操作系统（Compatible Time-Sharing System，CTSS）"></a>1969 年以前：分时操作系统（Compatible Time-Sharing System，CTSS）</h3><p>  让大型主机通过提供多个终端机（Terminal）连接进入主机，从而利用主机资源进行工作，<br>  实际上是 CPU 在每个用户的工作之间进行切换，在当时是划时代的技术</p>
+<h3 id="1969-年：UNIX-原型"><a href="#1969-年：UNIX-原型" class="headerlink" title="1969 年：UNIX 原型"></a>1969 年：UNIX 原型</h3><p>Thompson 在  1969 年 8 月份开始，经过 4 个星期的奋斗，以汇编语言（Assembler）写出了一组内核程序，<br>包括内核工具以及一个小的文件系统</p>
+<p>该系统有两个重要的概念：</p>
+<ol>
+<li>所有的程序或系统装置都是文件</li>
+<li>不管构建编辑器还是附属文件，所写的程序只有一个目的，就是有效地完成目标</li>
+</ol>
+<p>这些概念在后来对于 Linux 的开发有相当重要的影响</p>
+<h3 id="1973-年：UNIX"><a href="#1973-年：UNIX" class="headerlink" title="1973 年：UNIX"></a>1973 年：UNIX</h3><p>使用 C 语言编写出第一个正式 UNIX 内核，高级的 C 语言与硬件相关性没有那么大了，所以比较容易移植到不同的机器上</p>
+<h3 id="1979-年：System-V-架构与版权声明"><a href="#1979-年：System-V-架构与版权声明" class="headerlink" title="1979 年：System V 架构与版权声明"></a>1979 年：System V 架构与版权声明</h3><p>unix 的高度可移植性与强大的性能，而且还是开源的，无版权纠纷，很多商业公司开始了 unix 操作系统的开发，<br>计算机硬件生产厂商还没有「协议」概念，所以各自生产的硬件只支持自家的操作系统，而且没有硬件厂商支持个人计算机。</p>
+<p>所以当时的 unix 只能与服务器（server）或则是大型工作站划等号。</p>
+<p>System V 架构的 unix 出来之后，支持了 x86 架构的个人计算机</p>
+<h3 id="1984-年：GNU-项目与-FSF基金会成立"><a href="#1984-年：GNU-项目与-FSF基金会成立" class="headerlink" title="1984 年：GNU 项目与 FSF基金会成立"></a>1984 年：GNU 项目与 FSF基金会成立</h3><p>史托曼开始 GNU 项目，要创建一个自由、开放的 UNIX 系统，但是创建一个操作系统谈何容易，<br>就先开始编写 unix 的软件，发现任何软件都需要先编译成二进制文件（Binary Program），<br>因此开始编写 C 语言的编译程序，哪就是现在相当著名的 <strong>GNU C Compiler（GCC）</strong></p>
+<p>还成立了自由软件基金会（Free Software Foundation），并最终完成了 GCC 的开发，<br>还编写了许多可以被调用的 C 函数库（GNU C Libary），以及可以被用来操作操作系统的基本接口 bash shell，<br>这些都在 1990 年左右完成</p>
+<h3 id="GUN-的通用公共许可证"><a href="#GUN-的通用公共许可证" class="headerlink" title="GUN 的通用公共许可证"></a>GUN 的通用公共许可证</h3><p>到了 1985 年为了避免 GNU 所开发的自由软件被他人利用而成为专利软件，所以草拟了著名的通过公共许可证<br>（General Public License，GPL）</p>
+<h3 id="1988-年-图形接口-XFree86-项目"><a href="#1988-年-图形接口-XFree86-项目" class="headerlink" title="1988 年 图形接口 XFree86 项目"></a>1988 年 图形接口 XFree86 项目</h3><p>图形用户接口（Graphical User interface ,GUI）的需求日益加重，出现了 X Window System.</p>
+<p>XFree86 其实是 X Window System + Free + x86 的整合名称。而这个 Xfree86 的 GUI 在 Linux 1.0 版本的内核中被集成在其中</p>
+<p>为什么称图形用户界面为 X 呢？因为由英文单字来看，Window 中的字母 W 下面接着就是 X，意指 Window 的下一版！<br>需要注意的是，X Window 并不是 X Windows</p>
+<h3 id="1991-年：Linux-出世"><a href="#1991-年：Linux-出世" class="headerlink" title="1991 年：Linux 出世"></a>1991 年：Linux 出世</h3><p>芬兰大学生 Linus Torvalds 以 bash、gcc 等工具编写了一个小小的内核程序，这个内核程序可以在 intel 的 386 机器上面运行，<br>从此开始了 Linux 的不平凡旅程</p>
+<h2 id="关于-GNU-项目"><a href="#关于-GNU-项目" class="headerlink" title="关于 GNU 项目"></a>关于 GNU 项目</h2><h3 id="自由软件的活动"><a href="#自由软件的活动" class="headerlink" title="自由软件的活动"></a>自由软件的活动</h3><p>也就是开源，把源代码分享出来，成为自由软件（Free Software） 运动</p>
+<h3 id="自由软件的版权-GNU-GPL"><a href="#自由软件的版权-GNU-GPL" class="headerlink" title="自由软件的版权 GNU GPL"></a>自由软件的版权 GNU GPL</h3><p>为了避免自己开发出来的开源软件拿去做成商业软件，就会挂上 GPL 的版权声明</p>
+<p>为什么要称为 GUN 呢？ 其实 GUN 是 GNU’s Not UNINX 的缩写，意思是说 GUN 并不是 UNIX</p>
+<h3 id="自由（Free）的真谛"><a href="#自由（Free）的真谛" class="headerlink" title="自由（Free）的真谛"></a>自由（Free）的真谛</h3><p>Free Software（自由软件）是一种自由的权利，并非是「价格」。<br>举例来说，你可以拥有自由呼吸的权利，但是这并不代表你开源导出喝免费的啤酒，<br>也就是说自由软件的重点病不是指「免费」的，而是指具有「自由度」（freedom）的软件：<br>用户可以自由执行、复制、再发行、学习、修改与强化自由软件</p>
+<p>因此，你拿到的软件可能原先只能在 UNIX 上跑，但是经过源码的修改之后，可以在 LINUX 或 Windows 上运行，<br>一个软件挂上 GPL 后，它就成为了一个自由软件，具有如下特性：</p>
+<ul>
+<li>取得软件与源码：你可以根据自己的需要来执行这个自由软件</li>
+<li>复制</li>
+<li>修改</li>
+<li>再发行：修改或的程序再自由发行</li>
+<li>回馈：你取之开源，就应该回馈于开源</li>
+</ul>
+<p>但是使用 GPL 之后，你不能做以下事情：</p>
+<ul>
+<li>修改授权：不能将一个 GPL 授权的软件修改之后，取消 GPL 授权</li>
+<li>单纯销售：GPL 是互助互利的，不能占为己有，但是你可以销售软件，并搭配售后服务</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/08/13/Linux/01/Linux01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ゼロから学ぶAWSの学習ガイド-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -401,6 +680,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">AWS</a>
               </li>
              
@@ -413,7 +696,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
             
             <div class="clearfix"></div>
