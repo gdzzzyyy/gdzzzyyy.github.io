@@ -141,6 +141,381 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Linux/LPIC問題集/実施4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/10/04/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD4/">実施4</a>
+    </h1>
+  
+
+        
+        <a href="/2024/10/04/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD4/" class="archive-article-date">
+  	<time datetime="2024-10-04T14:17:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-10-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <!-- 
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%E3%80%81%E3%83%AD%E3%83%BC%E3%83%89%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">１、ロードされているカーネルモジュールの情報を表示するコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%92%E3%80%81rpm%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%BD%B5%E7%94%A8%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%B8%80%E8%A6%A7%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%EF%BC%9F"><span class="toc-text">２、rpmコマンドの併用オプションのうち、設定ファイルを一覧表示するオプションは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%93%E3%80%81%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%89%B9%E5%BE%B4%E3%82%92%E6%8C%81%E3%81%A4init%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%AF%EF%BC%9F"><span class="toc-text">３、以下の特徴を持つinitプログラムの名前は？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%94%E3%80%81zypper%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">４、zypperコマンドのサブコマンドのうち、パッケージをアップデートするサブコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%95%E3%80%81yum%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E5%BE%8C%E7%B6%99%E3%81%A7%E3%81%82%E3%82%8A%E3%80%81yum%E3%81%A8%E5%90%8C%E6%A7%98%E3%81%8A%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%84%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">５、yumコマンドの後継であり、yumと同様おオプションやリポジトリを使用できるコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%96%E3%80%81rpm%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9F%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%82%92%E7%85%A7%E4%BC%9A%E3%81%99%E3%82%8B%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%EF%BC%9F"><span class="toc-text">６、rpmコマンドのオプションのうち、指定したパッケージがインストールされているかを照会するオプションは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%97%E3%80%81rpm%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%BD%B5%E7%94%A8%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%B8%88%E3%81%BF%E3%81%AE%E5%85%A8%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%EF%BC%9F"><span class="toc-text">７、rpmコマンドの併用オプションのうち、インストール済みの全パッケージを表示するオプションは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%98%E3%80%81%E3%80%8CRebooting-soon%E3%80%8D%E3%81%A8%E3%81%84%E3%81%86%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%97%E3%81%A6%E3%80%8123-00%E3%81%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E5%86%8D%E8%B5%B7%E5%8B%95%E3%81%99%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">８、「Rebooting soon」というメッセージを表示して、23:00にサーバーを再起動するコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%99%E3%80%81rpm%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%BD%B5%E7%94%A8%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9F%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%EF%BC%9F"><span class="toc-text">９、rpmコマンドの併用オプションのうち、指定したパッケージに含まれるファイルを表示するオプションは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%90%E3%80%81yum%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">１０、yumコマンドのサブコマンドのうち、パッケージグループをインストールするサブコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%91%E3%80%81zypper%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E8%A9%B3%E7%B4%B0%E6%83%85%E5%A0%B1%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">１１、zypperコマンドのサブコマンドのうち、パッケージの詳細情報を表示するサブコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%92%E3%80%81rpm%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%81%86%E3%81%A1%E3%80%81%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E6%A4%9C%E6%9F%BB%E3%82%92%E8%A1%8C%E3%81%86%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%EF%BC%9F"><span class="toc-text">１２、rpmコマンドのオプションのうち、パッケージの検査を行うオプションは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%93%E3%80%81apt-cache%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%80%81%E3%80%8Cssh%E3%80%8D%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%8C%E4%BE%9D%E5%AD%98%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E5%90%8D%E5%89%8D%E3%82%92%E4%B8%80%E8%A6%A7%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84%E3%80%82%E9%81%A9%E5%88%87%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">１３、apt-cacheコマンドを使用して、「ssh」パッケージが依存しているパッケージの名前を一覧させたい。適切なコマンドは？</span></a></li></ol>
+    </div>
+ --> -->
+        <h4 id="１、ロードされているカーネルモジュールの情報を表示するコマンドは？"><a href="#１、ロードされているカーネルモジュールの情報を表示するコマンドは？" class="headerlink" title="１、ロードされているカーネルモジュールの情報を表示するコマンドは？"></a>１、ロードされているカーネルモジュールの情報を表示するコマンドは？</h4><p>　　また、ロードされているカーネルモジュールの情報が格納されたファイルは？<br>⇒lsmod</p>
+<p>⇒&#x2F;proc&#x2F;modules</p>
+<h4 id="２、rpmコマンドの併用オプションのうち、設定ファイルを一覧表示するオプションは？"><a href="#２、rpmコマンドの併用オプションのうち、設定ファイルを一覧表示するオプションは？" class="headerlink" title="２、rpmコマンドの併用オプションのうち、設定ファイルを一覧表示するオプションは？"></a>２、rpmコマンドの併用オプションのうち、設定ファイルを一覧表示するオプションは？</h4><p>⇒-c&#x2F;–configfiles</p>
+<h4 id="３、以下の特徴を持つinitプログラムの名前は？"><a href="#３、以下の特徴を持つinitプログラムの名前は？" class="headerlink" title="３、以下の特徴を持つinitプログラムの名前は？"></a>３、以下の特徴を持つinitプログラムの名前は？</h4><p>サービスやタスクを「ジョブ」という単位で扱う<br>イベント駆動型<br>サービスの並列起動処理が可能<br>⇒Upstart</p>
+<h4 id="４、zypperコマンドのサブコマンドのうち、パッケージをアップデートするサブコマンドは？"><a href="#４、zypperコマンドのサブコマンドのうち、パッケージをアップデートするサブコマンドは？" class="headerlink" title="４、zypperコマンドのサブコマンドのうち、パッケージをアップデートするサブコマンドは？"></a>４、zypperコマンドのサブコマンドのうち、パッケージをアップデートするサブコマンドは？</h4><p>⇒up&#x2F;update</p>
+<h4 id="５、yumコマンドの後継であり、yumと同様おオプションやリポジトリを使用できるコマンドは？"><a href="#５、yumコマンドの後継であり、yumと同様おオプションやリポジトリを使用できるコマンドは？" class="headerlink" title="５、yumコマンドの後継であり、yumと同様おオプションやリポジトリを使用できるコマンドは？"></a>５、yumコマンドの後継であり、yumと同様おオプションやリポジトリを使用できるコマンドは？</h4><p>⇒dnf</p>
+<h4 id="６、rpmコマンドのオプションのうち、指定したパッケージがインストールされているかを照会するオプションは？"><a href="#６、rpmコマンドのオプションのうち、指定したパッケージがインストールされているかを照会するオプションは？" class="headerlink" title="６、rpmコマンドのオプションのうち、指定したパッケージがインストールされているかを照会するオプションは？"></a>６、rpmコマンドのオプションのうち、指定したパッケージがインストールされているかを照会するオプションは？</h4><p>⇒-q &#x2F;–query</p>
+<h4 id="７、rpmコマンドの併用オプションのうち、インストール済みの全パッケージを表示するオプションは？"><a href="#７、rpmコマンドの併用オプションのうち、インストール済みの全パッケージを表示するオプションは？" class="headerlink" title="７、rpmコマンドの併用オプションのうち、インストール済みの全パッケージを表示するオプションは？"></a>７、rpmコマンドの併用オプションのうち、インストール済みの全パッケージを表示するオプションは？</h4><p>⇒-a &#x2F;–all</p>
+<h4 id="８、「Rebooting-soon」というメッセージを表示して、23-00にサーバーを再起動するコマンドは？"><a href="#８、「Rebooting-soon」というメッセージを表示して、23-00にサーバーを再起動するコマンドは？" class="headerlink" title="８、「Rebooting soon」というメッセージを表示して、23:00にサーバーを再起動するコマンドは？"></a>８、「Rebooting soon」というメッセージを表示して、23:00にサーバーを再起動するコマンドは？</h4><p>⇒shutdown -r 23:00 “Rebooting soon”</p>
+<h4 id="９、rpmコマンドの併用オプションのうち、指定したパッケージに含まれるファイルを表示するオプションは？"><a href="#９、rpmコマンドの併用オプションのうち、指定したパッケージに含まれるファイルを表示するオプションは？" class="headerlink" title="９、rpmコマンドの併用オプションのうち、指定したパッケージに含まれるファイルを表示するオプションは？"></a>９、rpmコマンドの併用オプションのうち、指定したパッケージに含まれるファイルを表示するオプションは？</h4><p>⇒-l &#x2F;–list</p>
+<h4 id="１０、yumコマンドのサブコマンドのうち、パッケージグループをインストールするサブコマンドは？"><a href="#１０、yumコマンドのサブコマンドのうち、パッケージグループをインストールするサブコマンドは？" class="headerlink" title="１０、yumコマンドのサブコマンドのうち、パッケージグループをインストールするサブコマンドは？"></a>１０、yumコマンドのサブコマンドのうち、パッケージグループをインストールするサブコマンドは？</h4><p>⇒groupinstall</p>
+<h4 id="１１、zypperコマンドのサブコマンドのうち、パッケージの詳細情報を表示するサブコマンドは？"><a href="#１１、zypperコマンドのサブコマンドのうち、パッケージの詳細情報を表示するサブコマンドは？" class="headerlink" title="１１、zypperコマンドのサブコマンドのうち、パッケージの詳細情報を表示するサブコマンドは？"></a>１１、zypperコマンドのサブコマンドのうち、パッケージの詳細情報を表示するサブコマンドは？</h4><p>⇒info</p>
+<h4 id="１２、rpmコマンドのオプションのうち、パッケージの検査を行うオプションは？"><a href="#１２、rpmコマンドのオプションのうち、パッケージの検査を行うオプションは？" class="headerlink" title="１２、rpmコマンドのオプションのうち、パッケージの検査を行うオプションは？"></a>１２、rpmコマンドのオプションのうち、パッケージの検査を行うオプションは？</h4><p>⇒-V &#x2F;–verify</p>
+<h4 id="１３、apt-cacheコマンドを使用して、「ssh」パッケージが依存しているパッケージの名前を一覧させたい。適切なコマンドは？"><a href="#１３、apt-cacheコマンドを使用して、「ssh」パッケージが依存しているパッケージの名前を一覧させたい。適切なコマンドは？" class="headerlink" title="１３、apt-cacheコマンドを使用して、「ssh」パッケージが依存しているパッケージの名前を一覧させたい。適切なコマンドは？"></a>１３、apt-cacheコマンドを使用して、「ssh」パッケージが依存しているパッケージの名前を一覧させたい。適切なコマンドは？</h4><p>⇒apt-cache depends ssh</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">LPIC</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/10/04/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Linux/LPIC問題集/実施3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/10/03/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD3/">実施3</a>
+    </h1>
+  
+
+        
+        <a href="/2024/10/03/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD3/" class="archive-article-date">
+  	<time datetime="2024-10-03T14:55:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-10-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <!-- 
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%E3%80%81GURB-Legacy%E3%81%A8GRUB2%E3%81%AE%E8%AA%AC%E6%98%8E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81"><span class="toc-text">１、GURB　LegacyとGRUB2の説明について、</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%92%E3%80%81dpkg%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%B8%88%E3%81%BF%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%80%81%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E6%99%82%E3%81%A8%E5%90%8C%E3%81%98%E3%82%88%E3%81%86%E3%81%AB%E5%86%8D%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">２、dpkgツールにおいてインストール済みのパッケージを、インストールした時と同じように再設定するコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%93%E3%80%81%E5%88%9D%E6%9C%9FRAM%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%81%AE%E8%AA%AC%E6%98%8E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81"><span class="toc-text">３、初期RAMディスクの説明について、</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%95%E3%80%81Linux%E3%81%8C%E3%83%8F%E3%83%BC%E3%83%89%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%81%8B%E3%82%89%E6%AD%A3%E5%B8%B8%E3%81%AB%E8%B5%B7%E5%8B%95%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E5%A0%B4%E5%90%88%E3%80%81%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%ABDVD%E3%82%92%E7%94%A8%E3%81%84%E3%81%A6%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%B9%E3%81%8D%E3%81%93%E3%81%A8%E3%81%AF%EF%BC%9F"><span class="toc-text">５、Linuxがハードディスクから正常に起動できなくなった場合、インストールDVDを用いて試してみるべきことは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%96%E3%80%81systemd%E3%81%AE%E5%8B%95%E4%BD%9C%E3%81%99%E3%82%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6%E3%80%81%E6%AC%A1%E5%9B%9E%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%AB%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%82%92%E8%A1%8C%E3%81%86%E3%81%9F%E3%82%81%E3%81%AB%E6%9C%80%E4%BD%8E%E9%99%90%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E7%8A%B6%E6%85%8B%E3%81%A7%E8%B5%B7%E5%8B%95%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84%E3%80%82"><span class="toc-text">６、systemdの動作するシステムにおいて、次回起動時にメンテナンスを行うために最低限のシステムサービス状態で起動させたい。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%97%E3%80%81dpkg%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%80%81%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%B8%88%E3%81%BF%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E4%B8%80%E8%A6%A7%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84%E3%80%82"><span class="toc-text">７、dpkgコマンドを使用し、インストール済みのパッケージを一覧表示させたい。</span></a></li></ol>
+    </div>
+ --> -->
+        <h4 id="１、GURB-LegacyとGRUB2の説明について、"><a href="#１、GURB-LegacyとGRUB2の説明について、" class="headerlink" title="１、GURB　LegacyとGRUB2の説明について、"></a>１、GURB　LegacyとGRUB2の説明について、</h4><p>GRUBのバージョンが１．９以降のものを「GRUB2」と呼ぶ<br>パーティション番号は、GRUB　Legacyは０から、GRUB2は１から数える<br>GRUB　Legacyの設定ファイルは「&#x2F;boot&#x2F;grub&#x2F;menu.lst」である</p>
+<h4 id="２、dpkgツールにおいてインストール済みのパッケージを、インストールした時と同じように再設定するコマンドは？"><a href="#２、dpkgツールにおいてインストール済みのパッケージを、インストールした時と同じように再設定するコマンドは？" class="headerlink" title="２、dpkgツールにおいてインストール済みのパッケージを、インストールした時と同じように再設定するコマンドは？"></a>２、dpkgツールにおいてインストール済みのパッケージを、インストールした時と同じように再設定するコマンドは？</h4><p>⇒dpkg-reconfigure</p>
+<h4 id="３、初期RAMディスクの説明について、"><a href="#３、初期RAMディスクの説明について、" class="headerlink" title="３、初期RAMディスクの説明について、"></a>３、初期RAMディスクの説明について、</h4><p>カーネルイメージと同様に「&#x2F;boot」ディレクトリに格納される<br>カーネルのバージョンごとに内容が異なる<br>ファイルシステムへアクセスするのに必要なドライバやスクリプトが含まれている<br>４、SysVinitの設定ファイル「&#x2F;etc&#x2F;inittab」を編集した。即座に変更を反映させるコマンドは？</p>
+<p>⇒init Q &#x2F;telinit q</p>
+<h4 id="５、Linuxがハードディスクから正常に起動できなくなった場合、インストールDVDを用いて試してみるべきことは？"><a href="#５、Linuxがハードディスクから正常に起動できなくなった場合、インストールDVDを用いて試してみるべきことは？" class="headerlink" title="５、Linuxがハードディスクから正常に起動できなくなった場合、インストールDVDを用いて試してみるべきことは？"></a>５、Linuxがハードディスクから正常に起動できなくなった場合、インストールDVDを用いて試してみるべきことは？</h4><p>ハードディスク内のログを確認する<br>レスキューモードでの起動を試みる</p>
+<h4 id="６、systemdの動作するシステムにおいて、次回起動時にメンテナンスを行うために最低限のシステムサービス状態で起動させたい。"><a href="#６、systemdの動作するシステムにおいて、次回起動時にメンテナンスを行うために最低限のシステムサービス状態で起動させたい。" class="headerlink" title="６、systemdの動作するシステムにおいて、次回起動時にメンテナンスを行うために最低限のシステムサービス状態で起動させたい。"></a>６、systemdの動作するシステムにおいて、次回起動時にメンテナンスを行うために最低限のシステムサービス状態で起動させたい。</h4><p>⇒　runlevel1.target &#x2F; rescue.target</p>
+<h4 id="７、dpkgコマンドを使用し、インストール済みのパッケージを一覧表示させたい。"><a href="#７、dpkgコマンドを使用し、インストール済みのパッケージを一覧表示させたい。" class="headerlink" title="７、dpkgコマンドを使用し、インストール済みのパッケージを一覧表示させたい。"></a>７、dpkgコマンドを使用し、インストール済みのパッケージを一覧表示させたい。</h4><p>⇒dpkg –list &#x2F;dpkg -I</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">LPIC</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/10/03/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Linux/LPIC問題集/実施2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/10/02/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD2/">実施2</a>
+    </h1>
+  
+
+        
+        <a href="/2024/10/02/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD2/" class="archive-article-date">
+  	<time datetime="2024-10-02T14:21:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-10-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <!-- 
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%E3%80%81%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E5%86%8D%E8%B5%B7%E5%8B%95%E3%81%AE%E3%81%BF%E3%82%92%E8%A1%8C%E3%81%88%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">１、システムの再起動のみを行えるコマンドは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%92%E3%80%81%E3%83%9E%E3%83%AB%E3%83%81%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%A2%E3%83%BC%E3%83%89%E3%82%92%E6%84%8F%E5%91%B3%E3%81%99%E3%82%8B%E3%83%A9%E3%83%B3%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AF%EF%BC%9F%EF%BC%88Redhat%E7%B3%BB"><span class="toc-text">２、マルチユーザモードを意味するランレベルは？（Redhat系)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%93%E3%80%81%E3%80%8Cctrl-alt-del%E3%80%8D%E3%82%AD%E3%83%BC%E3%82%92%E6%8A%BC%E4%B8%8B%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E5%8B%95%E4%BD%9C%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AF%EF%BC%9F"><span class="toc-text">３、「ctrl +alt+del」キーを押下した際のシステムの動作を設定できるファイルは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%94%E3%80%81%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%AB%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%81%8B%E3%82%89%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E6%B8%A1%E3%81%95%E3%82%8C%E3%81%9F%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%8C%E6%A0%BC%E7%B4%8D%E3%81%95%E3%82%8C%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AF%EF%BC%9F"><span class="toc-text">４、システム起動時にブートローダからカーネルに渡されたパラメータが格納されたファイルは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%95%E3%80%81%E4%B8%80%E8%88%AC%E7%9A%84%E3%81%AALinux%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E8%B5%B7%E5%8B%95%E9%A0%86%E5%BA%8F%E3%81%AF%EF%BC%9F"><span class="toc-text">５、一般的なLinuxシステムの起動順序は？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%96%E3%80%81%E3%83%9E%E3%83%AB%E3%83%81%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%A2%E3%83%BC%E3%83%89%E3%81%A7%E3%80%81GUI%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%83%A9%E3%83%B3%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AF%EF%BC%9F%EF%BC%88Redhat%E7%B3%BB%EF%BC%89"><span class="toc-text">６、マルチユーザモードで、GUIログインのランレベルは？（Redhat系）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%97%E3%80%81systemctl%E3%81%AE%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%95%E3%81%9B%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%82%E3%81%AE%E3%81%AF%EF%BC%9F%EF%BC%88%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%99%E3%83%83%E3%83%88%E9%A0%86%E3%81%AB%EF%BC%89"><span class="toc-text">７、systemctlのサブコマンドでシステムを停止させることができるものは？（アルファベット順に）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%98%E3%80%81init%E3%81%AEPID-%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9ID-%E3%81%AF%EF%BC%9F"><span class="toc-text">８、initのPID(プロセスID)は？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%99%E3%80%81%E3%83%A2%E3%83%87%E3%83%A0%E3%80%81TA%EF%BC%88%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%EF%BC%89%E3%81%AA%E3%81%A9%E3%81%8C%E5%B1%9E%E3%81%97%E3%81%A6%E3%81%84%E3%82%8BUSB%E3%81%AE%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AF%EF%BC%9F"><span class="toc-text">９、モデム、TA（ターミナルアダプタ）などが属しているUSBのデバイスクラスは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%90%E3%80%81%E3%80%8C-etc-inittab%E3%80%8D%E3%82%92%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84init%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AF%EF%BC%9F"><span class="toc-text">１０、「&#x2F;etc&#x2F;inittab」を設定ファイルとして使用しないinitプログラムは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%91%E3%80%81%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%81%8C%E4%BD%BF%E7%94%A8%E4%B8%ADDMA%E3%83%81%E3%83%A3%E3%83%8D%E3%83%AB%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E3%81%8C%E6%A0%BC%E7%B4%8D%E3%81%95%E3%82%8C%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AF%EF%BC%9F"><span class="toc-text">１１、デバイスが使用中DMAチャネルに関する情報が格納されたファイルは？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%92%E3%80%81systemd%E3%81%AE%E7%AE%A1%E7%90%86%E5%8D%98%E4%BD%8D%E3%81%A7%E3%81%82%E3%82%8BUnit%E3%81%AE%E5%90%8D%E7%A7%B0%E3%82%92%E4%BB%A5%E4%B8%8B%E3%81%AE%E9%A0%86%E3%81%AB%E7%AD%94%E3%81%88%E3%82%8B"><span class="toc-text">１２、systemdの管理単位であるUnitの名称を以下の順に答える</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%EF%BC%93%E3%80%81systemd%E3%81%8C%E5%88%A9%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%81%AE%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AEsystemctl%E3%81%AE%E3%82%B5%E3%83%96%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF%EF%BC%9F"><span class="toc-text">１３、systemdが利用できるユニットの一覧を取得するためのsystemctlのサブコマンドは？</span></a></li></ol>
+    </div>
+ --> -->
+        <h4 id="１、システムの再起動のみを行えるコマンドは？"><a href="#１、システムの再起動のみを行えるコマンドは？" class="headerlink" title="１、システムの再起動のみを行えるコマンドは？"></a>１、システムの再起動のみを行えるコマンドは？</h4><p>システムを再起動させるためのsystemctlコマンドのサブコマンドは？<br>     ⇒reboot</p>
+<h4 id="２、マルチユーザモードを意味するランレベルは？（Redhat系"><a href="#２、マルチユーザモードを意味するランレベルは？（Redhat系" class="headerlink" title="２、マルチユーザモードを意味するランレベルは？（Redhat系)"></a>２、マルチユーザモードを意味するランレベルは？（Redhat系)</h4><p>　　⇒２、３、５<br>　　※Ubuntu,Debian GNU&#x2F;Linuxで２、３、４、５</p>
+<h4 id="３、「ctrl-alt-del」キーを押下した際のシステムの動作を設定できるファイルは？"><a href="#３、「ctrl-alt-del」キーを押下した際のシステムの動作を設定できるファイルは？" class="headerlink" title="３、「ctrl +alt+del」キーを押下した際のシステムの動作を設定できるファイルは？"></a>３、「ctrl +alt+del」キーを押下した際のシステムの動作を設定できるファイルは？</h4><pre><code>⇒/etc/inittab
+</code></pre>
+<h4 id="４、システム起動時にブートローダからカーネルに渡されたパラメータが格納されたファイルは？"><a href="#４、システム起動時にブートローダからカーネルに渡されたパラメータが格納されたファイルは？" class="headerlink" title="４、システム起動時にブートローダからカーネルに渡されたパラメータが格納されたファイルは？"></a>４、システム起動時にブートローダからカーネルに渡されたパラメータが格納されたファイルは？</h4><p>　　⇒&#x2F;proc&#x2F;cmdline</p>
+<h4 id="５、一般的なLinuxシステムの起動順序は？"><a href="#５、一般的なLinuxシステムの起動順序は？" class="headerlink" title="５、一般的なLinuxシステムの起動順序は？"></a>５、一般的なLinuxシステムの起動順序は？</h4><p>　　⇒BIOS&#x2F;UEFI、ブートローダ、カーネル、init</p>
+<h4 id="６、マルチユーザモードで、GUIログインのランレベルは？（Redhat系）"><a href="#６、マルチユーザモードで、GUIログインのランレベルは？（Redhat系）" class="headerlink" title="６、マルチユーザモードで、GUIログインのランレベルは？（Redhat系）"></a>６、マルチユーザモードで、GUIログインのランレベルは？（Redhat系）</h4><pre><code> ⇒５
+</code></pre>
+<h4 id="７、systemctlのサブコマンドでシステムを停止させることができるものは？（アルファベット順に）"><a href="#７、systemctlのサブコマンドでシステムを停止させることができるものは？（アルファベット順に）" class="headerlink" title="７、systemctlのサブコマンドでシステムを停止させることができるものは？（アルファベット順に）"></a>７、systemctlのサブコマンドでシステムを停止させることができるものは？（アルファベット順に）</h4><p>　　⇒halt、poweroff</p>
+<h4 id="８、initのPID-プロセスID-は？"><a href="#８、initのPID-プロセスID-は？" class="headerlink" title="８、initのPID(プロセスID)は？"></a>８、initのPID(プロセスID)は？</h4><p>　  ⇒１</p>
+<h4 id="９、モデム、TA（ターミナルアダプタ）などが属しているUSBのデバイスクラスは？"><a href="#９、モデム、TA（ターミナルアダプタ）などが属しているUSBのデバイスクラスは？" class="headerlink" title="９、モデム、TA（ターミナルアダプタ）などが属しているUSBのデバイスクラスは？"></a>９、モデム、TA（ターミナルアダプタ）などが属しているUSBのデバイスクラスは？</h4><p>　  ⇒ACM</p>
+<h4 id="１０、「-etc-inittab」を設定ファイルとして使用しないinitプログラムは？"><a href="#１０、「-etc-inittab」を設定ファイルとして使用しないinitプログラムは？" class="headerlink" title="１０、「&#x2F;etc&#x2F;inittab」を設定ファイルとして使用しないinitプログラムは？"></a>１０、「&#x2F;etc&#x2F;inittab」を設定ファイルとして使用しないinitプログラムは？</h4><p>　　⇒systemd、Upstart</p>
+<h4 id="１１、デバイスが使用中DMAチャネルに関する情報が格納されたファイルは？"><a href="#１１、デバイスが使用中DMAチャネルに関する情報が格納されたファイルは？" class="headerlink" title="１１、デバイスが使用中DMAチャネルに関する情報が格納されたファイルは？"></a>１１、デバイスが使用中DMAチャネルに関する情報が格納されたファイルは？</h4><pre><code>⇒/proc/dma
+</code></pre>
+<h4 id="１２、systemdの管理単位であるUnitの名称を以下の順に答える"><a href="#１２、systemdの管理単位であるUnitの名称を以下の順に答える" class="headerlink" title="１２、systemdの管理単位であるUnitの名称を以下の順に答える"></a>１２、systemdの管理単位であるUnitの名称を以下の順に答える</h4><p>　　・各種デバイスを管理する<br>　　・ファイルシステムのマウントを管理するUnit<br>    ・サービスを制御するUnit<br>    ・スワップ領域を管理するUnit<br>    ・複数のサービスをひとつのグループにするためのUnit<br>     ⇒device、mount、service、swap、target</p>
+<h4 id="１３、systemdが利用できるユニットの一覧を取得するためのsystemctlのサブコマンドは？"><a href="#１３、systemdが利用できるユニットの一覧を取得するためのsystemctlのサブコマンドは？" class="headerlink" title="１３、systemdが利用できるユニットの一覧を取得するためのsystemctlのサブコマンドは？"></a>１３、systemdが利用できるユニットの一覧を取得するためのsystemctlのサブコマンドは？</h4><p>　  ⇒list-unit-files</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">LPIC</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/10/02/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Linux/LPIC問題集/実施1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/10/01/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD1/">実施1</a>
+    </h1>
+  
+
+        
+        <a href="/2024/10/01/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD1/" class="archive-article-date">
+  	<time datetime="2024-10-01T14:00:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-10-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- <!-- 
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%91%E3%80%81udev%E3%81%8C%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E8%A8%AD%E5%AE%9A%E6%83%85%E5%A0%B1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="toc-text">１、udevが使用するデバイス設定情報について</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%92%E3%80%81USB%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%B9"><span class="toc-text">２、USBデバイスクラス</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%93%E3%80%81D-Bus%EF%BC%88Desktop-Bus%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="toc-text">３、D-Bus（Desktop　Bus）について</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%94%E3%80%81UEFI%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="toc-text">４、UEFIの特徴について</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%95%E3%80%81%E4%B8%BB%E3%81%AAUSB%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%80%81USB%E3%81%AE%E8%A6%8F%E6%A0%BC%E3%80%81%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB"><span class="toc-text">５、主なUSBコントローラ、USBの規格、モジュール</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%96%E3%80%81%E8%B5%B7%E5%8B%95%E4%B8%AD%E3%81%AE%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%82%84%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A8%E3%82%A2%E3%81%AE%E6%83%85%E5%A0%B1%E3%81%8C%E6%A0%BC%E7%B4%8D%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AF%E3%80%8C-proc%E3%80%8D"><span class="toc-text">６、起動中のプロセスやカーネルが認識しているハードウエアの情報が格納されているディレクトリは「&#x2F;proc」</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%97%E3%80%81%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%81%8C%E4%BD%BF%E7%94%A8%E4%B8%AD%E3%81%AEDMA%E3%83%81%E3%83%A3%E3%83%8D%E3%83%AB%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E3%81%8C%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AF%E3%80%8C-proc-dma%E3%80%8D"><span class="toc-text">７、デバイスが使用中のDMAチャネルに関する情報が確認できるファイルは「&#x2F;proc&#x2F;dma」</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%98%E3%80%81%E3%83%AD%E3%83%BC%E3%83%89%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF"><span class="toc-text">８、ロードされているカーネルモジュールの情報を表示するコマンドは</span></a></li></ol>
+    </div>
+ --> -->
+        <h4 id="１、udevが使用するデバイス設定情報について"><a href="#１、udevが使用するデバイス設定情報について" class="headerlink" title="１、udevが使用するデバイス設定情報について"></a>１、udevが使用するデバイス設定情報について</h4><p>　設定情報ファイルは「&#x2F;etc&#x2F;udev&#x2F;rules.d」に配置される</p>
+<h4 id="２、USBデバイスクラス"><a href="#２、USBデバイスクラス" class="headerlink" title="２、USBデバイスクラス"></a>２、USBデバイスクラス</h4><p>　HID(Human Interface Device) 　　　⇔　キーボート、マウス、ジョイスティックなど<br>　Mass Storage Class 　　　　⇔　ハードディスク、USBメモリーなど<br>　ACM Communication Device Class 　⇔　モデム、TAなど<br>　Audio Class 　　　　 ⇔　スピーカー、マイクなど</p>
+<h4 id="３、D-Bus（Desktop-Bus）について"><a href="#３、D-Bus（Desktop-Bus）について" class="headerlink" title="３、D-Bus（Desktop　Bus）について"></a>３、D-Bus（Desktop　Bus）について</h4><p>プログラム同士が情報を伝達するプロセス間通信機構のひとつです。Linuxでは<br>dbus-daimonなどがプロセス間通信の中継を行います。この機能により、例えば新しいデバイスの認識情報を他のアプリケーションに伝達し、そのアプリケーションが新しいデバイスをすぐに使えるようになるなどのシステム管理上の利便性も向上します。</p>
+<h4 id="４、UEFIの特徴について"><a href="#４、UEFIの特徴について" class="headerlink" title="４、UEFIの特徴について"></a>４、UEFIの特徴について</h4><p>　　①GUIで操作が可能となる<br>　　②３TB以上のHDDからの起動をサーポートする</p>
+<h4 id="５、主なUSBコントローラ、USBの規格、モジュール"><a href="#５、主なUSBコントローラ、USBの規格、モジュール" class="headerlink" title="５、主なUSBコントローラ、USBの規格、モジュール"></a>５、主なUSBコントローラ、USBの規格、モジュール</h4><p>　　コントローラ　　　規格　　　　カーネル2.4　　　　カーネル2.6<br>UHCI USB1.1 usb-uhci uhci_hcd<br>OHCI USB1.1 usb-ohci ohci_hcd<br>EHCI USB2.0 – ehci_hcd</p>
+<h4 id="６、起動中のプロセスやカーネルが認識しているハードウエアの情報が格納されているディレクトリは「-proc」"><a href="#６、起動中のプロセスやカーネルが認識しているハードウエアの情報が格納されているディレクトリは「-proc」" class="headerlink" title="６、起動中のプロセスやカーネルが認識しているハードウエアの情報が格納されているディレクトリは「&#x2F;proc」"></a>６、起動中のプロセスやカーネルが認識しているハードウエアの情報が格納されているディレクトリは「&#x2F;proc」</h4><h4 id="７、デバイスが使用中のDMAチャネルに関する情報が確認できるファイルは「-proc-dma」"><a href="#７、デバイスが使用中のDMAチャネルに関する情報が確認できるファイルは「-proc-dma」" class="headerlink" title="７、デバイスが使用中のDMAチャネルに関する情報が確認できるファイルは「&#x2F;proc&#x2F;dma」"></a>７、デバイスが使用中のDMAチャネルに関する情報が確認できるファイルは「&#x2F;proc&#x2F;dma」</h4><h4 id="８、ロードされているカーネルモジュールの情報を表示するコマンドは"><a href="#８、ロードされているカーネルモジュールの情報を表示するコマンドは" class="headerlink" title="８、ロードされているカーネルモジュールの情報を表示するコマンドは"></a>８、ロードされているカーネルモジュールの情報を表示するコマンドは</h4><p>①、cat &#x2F;proc&#x2F;modules<br>②、lsmod</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">LPIC</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/10/01/Linux/LPIC%E5%95%8F%E9%A1%8C%E9%9B%86/%E5%AE%9F%E6%96%BD1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Linux/01/Linux05" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1061,89 +1436,10 @@
 
 
   
-    <article id="post-初め" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/03/%E5%88%9D%E3%82%81/">初识本人</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/03/%E5%88%9D%E3%82%81/" class="archive-article-date">
-  	<time datetime="2024-08-03T00:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- <!-- 
-    <div id="toc">
-        <strong class="sidebar-title">目录</strong>
-        
-    </div>
- --> -->
-        <p>安徽宣城人，31岁了，算是一个卢瑟吧。<br>当然我虽然知道自己很失败，但是我没有失去折腾的心，我想变的更强，变得更好。<br>保持学习，自律健身是我这几年的目标，也是我要坚持的生活方式。</p>
-<p>和我家晓璇是2024年7月19日，正式表白。<br>说起来也是很好笑。这个过程以后再写。反正现在就是异地的方式在一起了。<br>她很优秀，我很喜欢她。即使她说自己身材不好，颜值不高。<br>因为不知道为什么，过了30我好像明白了女朋友，或者说想找个伴侣的意义。不要好看，而是要我舒服。当然我也希望我能让她舒服。</p>
-<p>我以前是一个unity3d客户端开发工程师，也有后端开发经验。当然后端开发仅限于业务逻辑。<br>现在在日本，几乎算是一个新人，2023年专门学校毕业进入大阪的一家派遣公司，在银行从事系统开发工作，当然最近有换现场和换工作的想法。<br>主要是使用Java ，C#， Python， SQL。之后再分开写我的技术栈吧。只能说懂得多，但是不精。</p>
-<p>未来怎么说？<br>未来就想和我家璇宝一起到东京生活，从事开发工作，感觉在日本什么都要会，接近成为一名全栈。<br>然后就是提高我的日语和英语能力。反正语言这个能力是必须的，在日本做IT，技术不是最关键的，语言是最关键的。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂谈</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/03/%E5%88%9D%E3%82%81/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -1246,6 +1542,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">LPIC</a>
               </li>
             
             <div class="clearfix"></div>
